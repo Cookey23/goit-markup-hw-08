@@ -1,10 +1,14 @@
 .advantage-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .advantage-list__item {
-  width: calc((100%-90px) / 4);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

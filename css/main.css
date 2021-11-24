@@ -603,16 +603,19 @@ img {
   background-color: var(--primary-bg-color);
 }
 
-.advantage-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+  }
 }
 
-.advantage-list__item {
-  width: calc((100%-90px) / 4);
-}
-
-.advantage-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .advantage-list__item {
+    width: calc((100%-90px) / 4);
+  }
+  .advantage-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-list__icon {
