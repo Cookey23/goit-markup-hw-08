@@ -7,11 +7,17 @@
 .header-nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .site-nav__list {
   display: flex;
   margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -27,7 +33,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+
   transition: color 250ms var(--primary-cubic);
   &:hover,
   &:focus {
@@ -48,6 +54,9 @@
 .header-contacts {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .header-contacts__item + .header-contacts__item {
   margin-left: 50px;
