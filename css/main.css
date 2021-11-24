@@ -170,7 +170,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  max-width: 528px;
   height: 581px;
   padding: 40px;
   background-color: #fff;
@@ -472,6 +472,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
   transition: color 250ms var(--primary-cubic);
 }
 
