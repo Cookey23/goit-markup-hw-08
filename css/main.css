@@ -605,22 +605,33 @@ img {
 
 @media screen and (min-width: 768px) {
   .advantage-list {
+    margin: -15px;
     display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantage-list__item {
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list__item {
+    margin: 15px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage-list__item {
-    width: calc((100%-90px) / 4);
-  }
-  .advantage-list__item:not(:last-child) {
-    margin-right: 30px;
+    width: 270px;
   }
 }
 
 .advantage-list__icon {
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   display: flex;
@@ -636,6 +647,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-list__title {
+    text-align: center;
+  }
 }
 
 .advantage-list__text {
