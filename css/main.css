@@ -762,7 +762,6 @@ img {
 }
 
 .team-card {
-  margin-bottom: 30px;
   text-align: center;
   padding-bottom: 30px;
   max-width: 450px;
@@ -771,15 +770,19 @@ img {
   background-color: #fff;
 }
 
+.team-list__team-card {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
-  .team-card {
+  .team-list__team-card {
     margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-card {
+  .team-list__team-card {
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
