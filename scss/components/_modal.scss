@@ -2,18 +2,27 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 528px;
-  height: 581px;
   padding: 40px;
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms var(--primary-cubic);
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 449px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
-.btn-close-modal {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -24,13 +33,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
-.close-modal-icon {
+.btn-close__icon {
   width: 11px;
   height: 11px;
   fill: #000;
   transition: fill 250ms var(--primary-cubic);
-  .btn-close-modal:hover &,
-  .btn-close-modal:focus & {
+  .btn-close:hover &,
+  .btn-close:focus & {
     fill: var(--accent-color);
   }
 }
