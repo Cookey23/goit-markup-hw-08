@@ -185,9 +185,9 @@ img {
   }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 380px) {
   .modal {
-    width: 300px;
+    width: 380px;
   }
 }
 
