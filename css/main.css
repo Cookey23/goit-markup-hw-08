@@ -312,6 +312,7 @@ img {
 }
 
 .menu-open-btn {
+  margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -328,6 +329,11 @@ img {
 .menu-open-btn__icon {
   width: 40px;
   height: 40px;
+  transition: fill 250ms var(--primary-cubic);
+}
+
+.menu-open-btn__icon:hover, .menu-open-btn__icon:focus {
+  fill: var(--accent-color);
 }
 
 .menu-close-btn {
@@ -346,6 +352,7 @@ img {
 .menu-close-icon {
   width: 18px;
   height: 18px;
+  transition: fill 250ms var(--primary-cubic);
 }
 
 .menu-close-icon:hover, .menu-close-icon:focus {
@@ -367,7 +374,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms var(--primary-cubic), visibility 250ms var(--primary-cubic);
 }
 
 .mobile-menu.is-open {
