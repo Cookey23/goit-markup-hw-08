@@ -59,6 +59,7 @@
   }
 }
 .work-examples__item {
+  display: flex;
   max-width: 450px;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -71,7 +72,9 @@
   }
 }
 .work-examples__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-decoration: none;
   transition: box-shadow 250ms var(--primary-cubic);
   &:hover {
@@ -104,6 +107,7 @@
 }
 
 .work-examples__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
