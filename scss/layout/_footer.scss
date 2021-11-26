@@ -96,18 +96,19 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .footer-form__text {
   @extend .footer-social__text;
 }
 .footer-form__wrapper {
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .footer-form__input {
