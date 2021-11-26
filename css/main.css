@@ -312,7 +312,7 @@ img {
   cursor: pointer;
 }
 
-.modal-checkbox:checked + .modal-checkbox-label::before {
+.modal-checkbox:checked + .modal-checkbox__label::before {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
